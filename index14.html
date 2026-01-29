@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Ejemplo</title>
+</head>
+<body>
+  <h1>Formulario de Registro</h1>
+
+  <form>
+    <!-- Campo de texto obligatorio -->
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <!-- Campo numérico obligatorio -->
+    <div>
+      <label for="peso">Peso:</label>
+      <input type="number" id="peso" name="peso" min="70" max="90" placeholder="70-90" required>
+    </div>
+
+    <!-- Campo de fecha obligatorio -->
+    <div>
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input type="date" id="fecha" name="fecha" required>
+    </div>
+
+    <!-- Campo select -->
+    <div>
+      <label for="pais">País de origen:</label>
+      <select id="pais" name="pais">
+        <option value="">Seleccione su país</option>
+        <option value="Chile">Chile</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Peru">Perú</option>
+      </select>
+    </div>
+
+    <!-- Campo email -->
+    <div>
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="ejemplo@dominio.com">
+    </div>
+
+    <!-- Radio buttons -->
+    <p>Género:</p>
+    <div>
+      <input type="radio" id="masculino" name="genero" value="Masculino">
+      <label for="masculino">Masculino</label>
+    </div>
+    <div>
+      <input type="radio" id="femenino" name="genero" value="Femenino">
+      <label for="femenino">Femenino</label>
+    </div>
+    <div>
+      <input type="radio" id="otro" name="genero" value="Otro">
+      <label for="otro">Otro</label>
+    </div>
+
+    <!-- Checkbox -->
+    <p>Intereses:</p>
+    <div>
+      <input type="checkbox" id="musica" name="intereses" value="Música">
+      <label for="musica">Música</label>
+    </div>
+    <div>
+      <input type="checkbox" id="deporte" name="intereses" value="Deporte">
+      <label for="deporte">Deporte</label>
+    </div>
+    <div>
+      <input type="checkbox" id="tecnologia" name="intereses" value="Tecnología">
+      <label for="tecnologia">Tecnología</label>
+    </div>
+
+    <!-- Botones -->
+    <div>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Resetear">
+    </div>
+  </form>
+</body>
+</html>
